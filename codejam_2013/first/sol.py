@@ -9,11 +9,12 @@ cases = int(f.readline())
 
 for n_c in range(cases):
 	[r, t] = [int(num) for num in f.readline().split(" ")]
-	a = Decimal(2)
-	b = Decimal(-1 + 2 * r)
-	c = Decimal(-t)
-	res = Decimal((-b + ( b ** Decimal(2) - Decimal(4) * a * c) ** Decimal(0.5))) / Decimal(2 * a)
-	n_r = int(res)
+	a = (2)
+	b = (-1 + 2 * r)
+	c = (-t)
+	res = (-b + ( b ** 2 + 8 * t) ** 0.5)
+	print (res / 4)
+	n_r = int(res / 4)
 	if n_r < 0:
 		print "r: %f  t: %f" % (r, t)
 		exit	
